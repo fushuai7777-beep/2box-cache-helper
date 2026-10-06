@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+*.spec
+*.exe
+*.zip
+Env/
+bin/
+log/
+repair-backups/
+repair-last-report.json
+check.json
