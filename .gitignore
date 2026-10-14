@@ -11,4 +11,8 @@ bin/
 log/
 repair-backups/
 repair-last-report.json
+patch-version-report.json
 check.json
+SharedResources/
+.helper-runtime/
+.helper-tests/
