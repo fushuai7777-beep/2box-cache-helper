@@ -1,6 +1,8 @@
 param([string]$Python = 'python', [switch]$UseExistingDependencies)
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
+& $Python -c "import struct,sys; sys.exit(0 if sys.platform == 'win32' and struct.calcsize('P') == 8 and sys.version_info[:2] == (3,12) else 1)"
+if ($LASTEXITCODE -ne 0) { throw 'Windows x64 Python 3.12 is required for this release.' }
 $buildPython = $Python
 if (!$UseExistingDependencies) {
     & $Python -m venv .venv

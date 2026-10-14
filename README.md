@@ -56,7 +56,7 @@
 
 ## 源码与构建
 
-需要 Windows、Python 3.12 和 NTFS 可写测试目录：
+源码测试请先克隆本仓库；便携下载包不包含测试文件。需要 Windows、64 位 Python 3.12 和 NTFS 可写测试目录：
 
 ```powershell
 python -m unittest -v test_2box_launcher test_shared_resources test_shared_update
